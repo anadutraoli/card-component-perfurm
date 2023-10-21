@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --background: hsl(30, 38%, 92%);
+  --ciano: hsl(158, 36%, 37%);
+  --cianoEscuro: hsl(159, 27%, 20%);
+  --azulEscuro: hsl(212, 21%, 14%);
+  --azulEsverdeado: hsl(228, 12%, 48%);
+  --branco: hsl(0, 0%, 100%);
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+p,
+span {
+  color: var(--azulEsverdeado);
+}
+
+a {
+  text-decoration: none;
+  color: var(--branco);
+}
+
+.imagem-perfume {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  max-width: 720px;
+  max-height: 720px;
+  background-color: var(--branco);
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.conteudo {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.adicional {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.titulo {
+  font-family: "Fraunces", serif;
+  padding: 0px 40px 0px 0px;
+  color: var(--azulEscuro);
+}
+
+.descricao {
+  line-height: 1.5;
+}
+
+.preco {
+  margin: 10px 0px;
+  color: var(--ciano);
+  font-size: 40px;
+  font-family: "Fraunces", serif;
+  display: flex;
+  gap: 20px;
+}
+
+.preco-anterior {
+  text-decoration: line-through;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  align-self: center;
+}
+
+.botao {
+  margin-top: 10px;
+  background-color: var(--ciano);
+  border-radius: 10px;
+  padding: 20px 0px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.botao:hover {
+  background-color: var(--cianoEscuro);
+}
