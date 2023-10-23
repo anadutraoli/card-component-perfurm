@@ -26,15 +26,16 @@ a {
 
 .imagem-perfume {
   width: 100%;
-  height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
 
 body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--background);
   font-family: "Montserrat", sans-serif;
-  display: grid;
-  place-content: center;
 }
 
 main {
@@ -99,4 +100,45 @@ main {
 
 .botao:hover {
   background-color: var(--cianoEscuro);
+}
+
+@media (max-width: 750px) {
+  .imagem-perfume {
+    height: 100%;
+    object-fit: cover;
+    object-position: top right;
+  }
+}
+
+@media (max-width: 650px) {
+
+  body {
+    margin: 0;
+  }
+  main {
+    max-width: 375px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conteudo {
+    gap: 10px;
+    padding: 20px 25px;
+  }
+
+  .adicional {
+    font-size: 12px;
+  }
+
+  .titulo {
+    padding: 0px;
+  }
+
+  .imagem-perfume {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
 }
